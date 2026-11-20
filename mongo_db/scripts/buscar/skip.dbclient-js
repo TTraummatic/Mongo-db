@@ -1,0 +1,2 @@
+// Active: 1795126094410@@gabrielribeirosantos085@24685@teste
+db("teste").collection("aula").find().skip(2)

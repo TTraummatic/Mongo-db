@@ -1,0 +1,4 @@
+// Active: 1795126094410@@gabrielribeirosantos085@24685@teste
+db("teste").collection("aula").find().sort({ nome: 1 })
+
+db("teste").collection("aula").find().sort({ idade: -1 })

@@ -1,0 +1,9 @@
+// Active: 1795126094410@@gabrielribeirosantos085@24685@teste
+db("teste").collection("aula").updateOne(
+    { nome: "Marco" },
+    {
+        $set: {
+            idade: 19
+        }
+    }
+)

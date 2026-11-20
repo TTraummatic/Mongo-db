@@ -1,0 +1,14 @@
+// Active: 1795126094410@@gabrielribeirosantos085@24685@teste
+db("teste").collection("aula").insertMany(
+    [
+        {
+            nome: "Anuar",
+            idade: 28
+        },
+        {
+            nome: "Marco",
+            idade: 28
+        }
+    ]
+
+)

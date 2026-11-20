@@ -1,0 +1,35 @@
+// Active: 1795126094410@@gabrielribeirosantos085@24685@teste
+db("teste").collection("aula").find({ nome: "Marco" })
+
+db("teste").collection("aula").find({ idade: 19 })
+
+db("teste").collection("aula").find({ idade: { $gt: 19 }})
+
+db("teste").collection("aula").find({ idade: { $lt: 28 }})
+
+db("teste").collection("aula").find({ idade: { $gte: 19 }})
+
+db("teste").collection("aula").find({ idade: { $lte: 28 }})
+
+db("teste").collection("aula").find({
+    nome: "Marco",
+    idade: 28
+})
+
+db("teste").collection("aula").find({
+  idade: {
+    $gt: 18,
+    $lt: 28
+  }  
+})
+
+db("teste").collection("aula").find({
+    $or: [
+        { idade: 28 },
+        { nome: "Gabriel" }
+    ]
+})
+
+db("teste").collection("aula").find({ idade: { $ne: 19 } })
+
+db("teste").collection("aula").find({ nome: { $regex: "ri" } })
